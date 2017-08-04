@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FriendMe Survey</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+<body>
+	<div class= "container" id="background">
+		<div class ="row"> 
+			<div class="col-md-12" id="headNavBar">
+				
+				  <div class="container-fluid">
+				    <div class="navbar-header">
+				      <a class="navbar-brand" href="index.html">
+				       
+				      </a>
+				    </div>
+				  </div>
+				</nav>
+			</div>
+		</div>	
+		<div class = "row">
+			<div class="titleBanner col-md-12" id="messages">
+				<h1 class="text-center"><span class="glyphicon glyphicon-user"></span> FindMe A Friend</h1>
+				<p> Let's Get Started </p>
+			</div>
+		</div>
+
+	<section id="schedule">
+		<div class="row">
+			<div class="col-lg-12">
+        	<div class="panel panel-default">
+		    	<div class="panel-heading">
+		            <h3 class="panel-title">User Info We Require</h3>
+		        </div>
+				<!-- Current Train Schedule Section -->
+						<div class="row" id="user-list">
+							<div class="col-md-3" id="userName">
+								<p> Username </p>
+							</div>
+
+							<div class="col-md-2" id="sex">
+							<p> Sex </p>
+							</div>
+
+							<div class="col-md-2" id="age">
+							<p> Age </p>
+							</div>
+
+							<div class="col-md-2" id="location">
+							<p> City/State </p>
+							</div>
+
+							<div class="col-md-3" id="picture">
+							<p> Picture </p>
+							</div>
+						</div>
+				
+			</div>
+			</div>
+		</div>
+	</section>
+	
+		<!-- New Section -->
+	<section id="forms">
+		<div class="row">
+			<div class=" test col-lg-12">
+        	<div class="panel panel-default">
+		    	<div class="panel-heading">
+		            <h3 class="panel-title">Add Me</h3>
+		        </div>
+				<div class="row">
+					<div class="col-lg-12">
+				<!--Add a train Form (note the various input "types")-->
+			        	<form role="form">
+				            <div class="form-group">
+				            	<label for="userName-input">User Name:</label>
+				                <input class="form-control" id="userName-input" type="text">
+				            </div>
+				            <div class="form-group">
+				                <label for="sex-input">Sex:</label>
+				                <input class="form-control" id="sex-input" type="text">
+				            </div>
+				            <div class="form-group">
+				                <label for="age-input">Age:</label>
+				                <input class="form-control" id="age-input" type="text">
+				            </div>
+				            <div class="form-group">
+				                <label for="profession-input">Location:</label>
+				                <input class="form-control" id="location-input" type="text">
+				            </div>
+				            <div class="form-group">
+				                <label for="location-input">Link to Photo:</label>
+				                <input class="form-control" id="picture-input" type="text">
+				            </div>
+
+				            <!-- pseudo logic
+				            - show only one question at a time
+				            // user[0].questionsArr.question[0] === answer[0];
+				            var questionArr = 	[ 
+				            					 {	"question0":answer[0],x
+				            					 	"question1":answer[1],
+				            					 	"question2":answer3[2]
+				            					 }
+				            					];
+				            var answersArr = [];
+				            var answer = 3; //default answer
+				            for (var i = 0; questionArr.length; i++){
+					            if (question[i].submit === true){
+									answer.push(answersArr);
+									hide current question:
+									var divOne = document.getElementById(this.id);
+										divOne.style.visibility = 'hidden';
+									unhide next question
+									var divTwo = document.getElementById(this.id);
+										divTwo.style.visibility = 'show';
+								}
+				            }
+							<div class="dropdown">
+								  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								    Dropdown
+								    <span class="caret"></span>
+								  </button>
+								  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								    <li><a href="#">Action</a></li>
+								    <li><a href="#">Another action</a></li>
+								    <li><a href="#">Something else here</a></li>
+								    <li role="separator" class="divider"></li>
+								    <li><a href="#">Separated link</a></li>
+								  </ul>
+								</div>
+				            -->
+				              <button class="btn btn-default" id="add-entry" type="submit">Take the Survey</button>
+				        </form>
+				       </div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="/main.js" types="text/JavaScript"></script>
+	</body>
+	</html>
